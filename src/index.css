@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+    background-color: #121213;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.terminalBG {
+    background: radial-gradient(#191818, #191717);
+}
+
+.noScrollbar::-webkit-scrollbar {
+    display: none;
+}
