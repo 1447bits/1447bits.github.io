@@ -178,7 +178,7 @@ const TerminalComponent = ({ containerStyle }) => {
                 </div>
 
                 {suggestions.length > 0 && (
-                    <div className="mt-1 flex gap-4 px-4 rounded-lg shadow-lg z-10 max-h-40 overflow-auto">
+                    <div className="mt-1 flex gap-4 px-4 rounded-lg shadow-lg z-10 max-h-40 flex-wrap">
                         {suggestions.map((suggestion, index) => (
                             <div
                                 key={suggestion}
