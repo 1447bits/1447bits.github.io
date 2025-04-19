@@ -1,5 +1,6 @@
 import { Info } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
+import './App.css'
 import TerminalComponent from './components/Terminal'
 
 const Portfolio = () => {
@@ -10,9 +11,9 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="flex flex-col px-2 max-w-[1200px] mx-auto items-center justify-center min-h-screen text-white p-4">
+    <div className="flex flex-col max-w-[1200px] mx-auto items-center justify-center min-h-screen text-white md:p-4 p-6">
       {/* Main content area */}
-      <div className="max-w-full w-full flex flex-col h-[700px] max-h-[70vh] md:flex-row items-center justify-between gap-8">
+      <div className="max-w-full w-full md:py-5 pt-24 flex flex-col md:h-[700px] h-[800px] md:max-h-[70vh] max-h-[900px] md:flex-row items-center justify-between gap-8">
         {/* Text section */}
         <div className="max-w-lg flex-1">
           <h1
@@ -26,8 +27,7 @@ const Portfolio = () => {
             className="font-mono text-xl md:text-2xl mb-6 text-gray-300"
             style={{ fontFamily: "'Kode Mono', monospace" }}
           >
-            I am Atharv - Fullstack developer<br />
-            | Altrd
+            I am Atharv - Fullstack developer <a className='hover:underline transition-all' href='https://altrdtech.com/'>@Altrd</a>
           </h2>
 
           <p
@@ -41,6 +41,10 @@ const Portfolio = () => {
             intersection of creativity and technology together—welcome to my
             world!
           </p>
+          <span className='flex gap-4'>
+          <span><a className=' opacity-60 hover:opacity-80 hover:underline transition-all' href='https://github.com/1447bits'>Github</a></span>
+          <span><a className='opacity-60 hover:opacity-80 hover:underline transition-all' href='https://www.linkedin.com/in/mstatharv/'>Linkedin</a></span>
+          </span>
         </div>
 
         {/* Floating image */}
@@ -69,7 +73,7 @@ const Portfolio = () => {
       <div className="w-full max-w-3xl border-t border-gray-700 my-12"></div>
 
       {/* Terminal section */}
-      <div className="w-full max-w-5xl">
+      <div className="w-full max-w-[1200px]">
         <div className="terminalBG border h-[800px] max-h-[80vh] border-gray-700 rounded-xl overflow-hidden">
           {/* Terminal header */}
           <div className="flex items-center px-4 py-2 border-b border-gray-700">
@@ -85,7 +89,7 @@ const Portfolio = () => {
           {/* Terminal content */}
           <div className="p-4">
             <div className="flex items-start overflow-auto noScrollbar max-h-[70vh]">
-              <TerminalComponent containerStyle={'h-[70vh]'} />
+              <TerminalComponent containerStyle={'md:h-[70vh] h-[720px]'} />
             </div>
             {/* Command output would go here */}
           </div>
