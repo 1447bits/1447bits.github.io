@@ -1,20 +1,82 @@
+#app {
+    max-width: 1200px;
+    margin-inline: auto;
+}
 #TerminalContainer h1 {
     font-size: 2rem;
     font-weight: bold;
 }
+
 #TerminalContainer h2 {
     font-size: 1.8rem;
     font-weight: bold;
 }
+
 #TerminalContainer h3 {
     font-size: 1.6rem;
     font-weight: bold;
 }
+
 #TerminalContainer h4 {
     font-size: 1.4rem;
     font-weight: bold;
 }
+
 #TerminalContainer h4 {
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+
+/* page bg css */
+
+#pageBg {
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(80px);
+}
+
+#pageBg .circle,
+#pageBg .circle-1,
+#pageBg .circle-2,
+#pageBg .circle-3 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    opacity: 0.1;
+}
+
+#pageBg .circle-1 {
+    height: 250px;
+    width: 250px;
+    bottom: 10%;
+    right: 20%;
+    opacity: 0.15;
+}
+
+#pageBg .circle-2 {
+    height: 150px;
+    width: 150px;
+    bottom: 10%;
+    right: 90%;
+    opacity: 0.20;
+}
+
+#pageBg .circle-3 {
+    height: 100px;
+    width: 100px;
+    bottom: 0%;
+    right: 10%;
+    opacity: 0.25;
 }
