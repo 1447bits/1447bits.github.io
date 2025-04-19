@@ -104,30 +104,54 @@ const TerminalComponent = ({ containerStyle }) => {
         // Handle enter to submit command
         if (e.key === 'Enter' && inputValue.trim()) {
 
-            // special commands
-            if (inputValue === "/clear") {
-                setMessages([])
-                setInputValue('');
-                return
-            }
-
             e.preventDefault();
 
-            // Add user input as a message
-            setMessages(prev => [...prev, { type: 'command', content: inputValue }]);
 
-            // Check if input matches a command
-            const commandResponse = COMMANDS[inputValue];
+            // run selected command on enter
+            if (suggestions.length > 0) {
 
-            if (commandResponse) {
+                // special commands
+                if (suggestions[activeIndex] === "/clear") {
+                    setMessages([])
+                    setInputValue('');
+                    return
+                }
+
+                setInputValue(suggestions[activeIndex])
+                // Add user input as a message
+                setMessages(prev => [...prev, { type: 'command', content: suggestions[activeIndex] }]);
+
+                const commandResponse = COMMANDS[suggestions[activeIndex]];
                 setFullResponseText(commandResponse);
                 setCurrentTypingText('');
                 setIsTyping(true);
-            } else if (inputValue.startsWith('/')) {
-                setMessages(prev => [...prev, {
-                    type: 'response',
-                    content: `Command not found: ${inputValue}. Type /help to see available commands.`
-                }]);
+
+            } else {
+
+                // special commands
+                if (inputValue === "/clear") {
+                    setMessages([])
+                    setInputValue('');
+                    return
+                }
+
+                // Add user input as a message
+                setMessages(prev => [...prev, { type: 'command', content: inputValue }]);
+
+                // Check if input matches a command
+                const commandResponse = COMMANDS[inputValue];
+
+                if (commandResponse) {
+                    setFullResponseText(commandResponse);
+                    setCurrentTypingText('');
+                    setIsTyping(true);
+                } else if (inputValue.startsWith('/')) {
+                    setMessages(prev => [...prev, {
+                        type: 'response',
+                        content: `Command not found: ${inputValue}. Type /help to see available commands.`
+                    }]);
+                }
+
             }
 
             // Clear input field
