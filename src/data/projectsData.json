@@ -1,0 +1,116 @@
+{
+    "Projects": [
+        {
+            "imagePath": "/project-images/tst-ss.png",
+            "heading": "Tiger Safari Trails",
+            "id": 0,
+            "stack": [
+                "Next.js",
+                "firebase",
+                "typescript",
+                "vercel",
+                "otpless"
+            ],
+            "desc": "A Safari Booking Website, simplifying tiger safari bookings aggregating all Tiger Safari Operators at one place to create a one stop for safari trip seeking users with facilities to have an enquiry and one ot one chat with Safari Operators",
+            "github": "#",
+            "deployment": "https://tigersafaritrails.in/"
+        },
+        {
+            "imagePath": "/project-images/cava.png",
+            "heading": "(#AskCava) D2C Chatbot",
+            "id": 1,
+            "stack": [
+                "Javascript",
+                "shopify",
+                "python"
+            ],
+            "desc": "The Cava D2C Sales Bot is an AI-powered, conversational recommendation bot designed for direct-to-consumer (D2C) websites. Tailored to help customers find the right products based on their specific needs, the bot provides a seamless, personalized shopping experience by guiding users to products that best match their preferences.",
+            "github": "#",
+            "deployment": "https://cavaathleisure.com/"
+        },
+        {
+            "imagePath": "/project-images/myvi-prev.png",
+            "heading": "Vi-IMC 2024",
+            "id": 2,
+            "stack": [
+                "Next.js",
+                "typescript",
+                "python"
+            ],
+            "desc": "This AI-powered tool, presented at the VI booth during IMC 2024, was developed to empower MSME (Micro, Small, and Medium Enterprises) Owners By filling out a few basic details, business owners could generate a professional, catchy jingle to promote their Businesses",
+            "github": "#",
+            "deployment": "https://myvi-events.in/"
+        },
+        {
+            "imagePath": "/project-images/PPM.png",
+            "heading": "Personal Project management system",
+            "id": 8,
+            "stack": [
+                "Next.js",
+                "Drizzle",
+                "typescript",
+                "shadCn",
+                "postgres",
+                "reactQUery",
+                "Zustland"
+            ],
+            "desc": "A Personal project and task management tool, with a dashboard and calendar to track upcoming and on going projects, made with Next.js js and postgres",
+            "github": "https://github.com/1447bits/personal-project-manager",
+            "deployment": "https://personal-project-manager-one.vercel.app/"
+        },
+        {
+            "imagePath": "/project-images/another tor.png",
+            "heading": "Another Tor",
+            "id": 4,
+            "desc": "An Attempt to build a developer centric Social-Media application, a place where all your social presence available on one click, collaborative tools with open thread discussions. Made with React js",
+            "stack": [
+                "React.js",
+                "sass",
+                "netlify",
+                "javascript"
+            ],
+            "github": "#",
+            "deployment": "https://anothertor.netlify.app/"
+        },
+        {
+            "imagePath": "/project-images/cardDesignSs.png",
+            "heading": "card centric design",
+            "id": 5,
+            "stack": [
+                "html",
+                "sass",
+                "javascript"
+            ],
+            "desc": "A card centric design webpage frontend, responsive, made with vanila html/css and javascript",
+            "github": "https://github.com/1447bits/frontend/tree/main/Assignment2",
+            "deployment": "https://1447bits.github.io/frontend/Assignment2/"
+        },
+        {
+            "imagePath": "/project-images/another-notpad.png",
+            "heading": "TipeIt",
+            "id": 6,
+            "stack": [
+                "html",
+                "css",
+                "javascript"
+            ],
+            "desc": "A fun project, Inspired by \"keybr.com\", A notepad to jot down your thoughts. Made with vanila html/css and javascript",
+            "github": "https://github.com/1447bits/typeit",
+            "deployment": "https://1447bits.github.io/typeit/"
+        },
+        {
+            "imagePath": "/project-images/janvry-icon.png",
+            "heading": "janvry Portfolio",
+            "id": 3,
+            "stack": [
+                "React.js",
+                "sass",
+                "vercel",
+                "javascript"
+            ],
+            "desc": "Company Portfolio page made for Janvry Studio",
+            "github": "#",
+            "deployment": "https://janvrywebsite-punh.vercel.app/Exclusive"
+        }
+    ]
+}

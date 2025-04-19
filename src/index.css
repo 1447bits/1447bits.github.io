@@ -2,6 +2,7 @@
 
 body {
     background-color: #121213;
+    color: #f1f1f1;
 }
 
 @keyframes float {
@@ -24,4 +25,12 @@ body {
 
 .noScrollbar::-webkit-scrollbar {
     display: none;
+}
+
+.font-primary {
+    font-family: 'Imprima', sans-serif
+}
+
+.font-heading {
+    font-family: 'Kode Mono', monospace
 }

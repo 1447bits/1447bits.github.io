@@ -4,7 +4,6 @@ import ReactMarkdown from 'https://cdn.jsdelivr.net/npm/react-markdown@10.1.0/+e
 
 // Define available commands and their markdown responses
 const COMMANDS = {
-
     "/about": "**About Me**\n\nI'm Atharv Vyas, a Full Stack Developer specializing in AI integration with expertise in building scalable web applications. My passion lies in creating innovative solutions that leverage cutting-edge technologies like Generative AI to solve real-world problems. \n\n[`Download Resume`](https://drive.google.com/file/d/10TRp8RkbQF762a2Bpy1fvrQgcGV3uWO6/view?usp=sharing)",
 
     "/education": "### 🎓 Education\n**B.E in Artificial Intelligence & Data Science with Honors in Cyber Security**\n\nSavitribai Phule Pune University (2021–2025)\nCGPA: 8.75\n\n**Certifications**:\n- Machine Learning Specialization (Stanford, Coursera)\n- ChatGPT Prompt Engineering for Developers (deeplearning.ai)\n- Complete Generative AI Course with Langchain & Huggingface (Udemy)",
@@ -36,7 +35,7 @@ const TerminalComponent = ({ containerStyle }) => {
     const [inputValue, setInputValue] = useState('');
     const [messages, setMessages] = useState([{
         type: 'response',
-        content: `Hello! I Hope you are having a great time ^^\n\nThis is Atharv's Terminal, Try **/help** command to know more :)`
+        content: `Hello! Hope you are having a great time ^^\n\nThis is Atharv's Terminal, Try **/help** command to know more :)`
     }]);
     const [suggestions, setSuggestions] = useState([]);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -166,7 +165,7 @@ const TerminalComponent = ({ containerStyle }) => {
 
             <div className="relative rounded-b-lg shadow pb-10-md">
                 <div className="flex items-center rounded-lg px-3 py-2">
-                    <Terminal size={20} className="text-white mr-2" />
+                    <Terminal size={20} className=" mr-2" />
                     <input
                         ref={inputRef}
                         type="text"
@@ -183,7 +182,7 @@ const TerminalComponent = ({ containerStyle }) => {
                         {suggestions.map((suggestion, index) => (
                             <div
                                 key={suggestion}
-                                className={`cursor-pointer hover: ${index === activeIndex ? 'bg-gray-600 text-white px-2 rounded-xs' : 'text-white'}`}
+                                className={`cursor-pointer hover: ${index === activeIndex ? 'bg-gray-600  px-2 rounded-xs' : ''}`}
                                 onClick={() => {
                                     setInputValue(suggestion);
                                     inputRef.current.focus();
