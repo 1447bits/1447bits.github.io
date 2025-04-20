@@ -3,8 +3,35 @@ import { Terminal } from 'lucide-react';
 import ReactMarkdown from 'https://cdn.jsdelivr.net/npm/react-markdown@10.1.0/+esm'
 
 // Define available commands and their markdown responses
+
+const ascii_art = `   
+  _ _  _   _  _ _____ _     _ _       
+ / | || | | || |___  | |__ (_) |_ ___ 
+ | | || |_| || |_ / /| '_ \\| | __/ __|
+ | |__   _|__   _/ / | |_) | | |_\\__ \\
+ |_|  |_|    |_|/_/  |_.__/|_|\\__|___/
+                                      
+`
+
+// const ascii_art = `   
+//  ██╗██╗  ██╗██╗  ██╗███████╗██████╗ ██╗████████╗███████╗
+// ███║██║  ██║██║  ██║╚════██║██╔══██╗██║╚══██╔══╝██╔════╝
+// ╚██║███████║███████║    ██╔╝██████╔╝██║   ██║   ███████╗
+//  ██║╚════██║╚════██║   ██╔╝ ██╔══██╗██║   ██║   ╚════██║
+//  ██║     ██║     ██║   ██║  ██████╔╝██║   ██║   ███████║
+//  ╚═╝     ╚═╝     ╚═╝   ╚═╝  ╚═════╝ ╚═╝   ╚═╝   ╚══════╝
+                                                                                              
+// `
+// const ascii_art = `   
+//  _ |  |  |    |  | ___  |  |     _)  |         
+//    |  |  |    |  |     /   __ \\   |  __|   __| 
+//    | ___ __| ___ __|  /    |   |  |  |   \\__ \\ 
+//   _|    _|      _|  _/    _.__/  _| \\__| ____/ 
+                                                                                                                                                                                                                 
+// `
+                                       
 const COMMANDS = {
-    "/about": "**About Me**\n\nI'm Atharv Vyas, a Full Stack Developer specializing in AI integration with expertise in building scalable web applications. My passion lies in creating innovative solutions that leverage cutting-edge technologies like Generative AI to solve real-world problems. \n\n[`Download Resume`](https://drive.google.com/file/d/10TRp8RkbQF762a2Bpy1fvrQgcGV3uWO6/view?usp=sharing)",
+    "/about": `**About** \n\nI'm Atharv Vyas, a Full Stack Developer specializing in AI integration with expertise in building scalable web applications. My passion lies in creating innovative solutions that leverage cutting-edge technologies like Generative AI to solve real-world problems. \n\n[\`Download Resume\`](https://drive.google.com/file/d/10TRp8RkbQF762a2Bpy1fvrQgcGV3uWO6/view?usp=sharing)`,
 
     "/education": "### 🎓 Education\n**B.E in Artificial Intelligence & Data Science with Honors in Cyber Security**\n\nSavitribai Phule Pune University (2021–2025)\nCGPA: 8.75\n\n**Certifications**:\n- Machine Learning Specialization (Stanford, Coursera)\n- ChatGPT Prompt Engineering for Developers (deeplearning.ai)\n- Complete Generative AI Course with Langchain & Huggingface (Udemy)",
 
@@ -35,7 +62,7 @@ const TerminalComponent = ({ containerStyle }) => {
     const [inputValue, setInputValue] = useState('');
     const [messages, setMessages] = useState([{
         type: 'response',
-        content: `Hello! Hope you are having a great time ^^\n\nThis is Atharv's Terminal, Try **/help** command to know more :)`
+        content: `\`\`\`${ascii_art}Hello! Hope you are having a great time ^^\n\nThis is Atharv's Terminal, Try **/help** command to know more :)`
     }]);
     const [suggestions, setSuggestions] = useState([]);
     const [activeIndex, setActiveIndex] = useState(0);
