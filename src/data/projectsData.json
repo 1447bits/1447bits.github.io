@@ -41,6 +41,20 @@
             "github": "#",
             "deployment": "https://myvi-events.in/"
         },
+                {
+            "imagePath": "/project-images/janvry-icon.png",
+            "heading": "janvry Portfolio",
+            "id": 3,
+            "stack": [
+                "React.js",
+                "sass",
+                "vercel",
+                "javascript"
+            ],
+            "desc": "Company Portfolio page made for Janvry Studio",
+            "github": "#",
+            "deployment": "https://janvrywebsite-punh.vercel.app/Exclusive"
+        },
         {
             "imagePath": "/project-images/PPM.png",
             "heading": "Personal Project management system",
@@ -57,20 +71,6 @@
             "desc": "A Personal project and task management tool, with a dashboard and calendar to track upcoming and on going projects, made with Next.js js and postgres",
             "github": "https://github.com/1447bits/personal-project-manager",
             "deployment": "https://personal-project-manager-one.vercel.app/"
-        },
-        {
-            "imagePath": "/project-images/another tor.png",
-            "heading": "Another Tor",
-            "id": 4,
-            "desc": "An Attempt to build a developer centric Social-Media application, a place where all your social presence available on one click, collaborative tools with open thread discussions. Made with React js",
-            "stack": [
-                "React.js",
-                "sass",
-                "netlify",
-                "javascript"
-            ],
-            "github": "#",
-            "deployment": "https://anothertor.netlify.app/"
         },
         {
             "imagePath": "/project-images/cardDesignSs.png",
@@ -97,20 +97,6 @@
             "desc": "A fun project, Inspired by \"keybr.com\", A notepad to jot down your thoughts. Made with vanila html/css and javascript",
             "github": "https://github.com/1447bits/typeit",
             "deployment": "https://1447bits.github.io/typeit/"
-        },
-        {
-            "imagePath": "/project-images/janvry-icon.png",
-            "heading": "janvry Portfolio",
-            "id": 3,
-            "stack": [
-                "React.js",
-                "sass",
-                "vercel",
-                "javascript"
-            ],
-            "desc": "Company Portfolio page made for Janvry Studio",
-            "github": "#",
-            "deployment": "https://janvrywebsite-punh.vercel.app/Exclusive"
         }
     ]
 }
